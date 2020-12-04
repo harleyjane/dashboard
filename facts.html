@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <title>Facts
+  </title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand"
+          href="http://www.htilabs.org">HTI Labs</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="datasource.html">Data Source</a></li>
+          <li class="active"><a href="facts.html">Facts</a>
+          </li>
+          <li><a href="users.html">Users</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Welcome, Andrew</a></li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <h1><span class="glyphicon glyphicon-cog"
+              aria-hidden="true"></span>Facts</h1>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section id="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Dashboard</a></li>
+        <li class="active">Facts</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="list-group">
+            <a href="index.html"
+              class="list-group-item active main-color-bg">
+              <span class="glyphicon glyphicon-cog"
+                aria-hidden="true"></span> Dashboard
+            </a>
+            <a href="datasource.html"
+              class="list-group-item"><span
+                class="glyphicon glyphicon-list-alt"
+                aria-hidden="true"></span> Data Source <span
+                class="badge">12</span></a>
+            <a href="facts.html"
+              class="list-group-item"><span
+                class="glyphicon glyphicon-pencil"
+                aria-hidden="true"></span> Facts <span
+                class="badge">33</span></a>
+            <a href="users.html"
+              class="list-group-item"><span
+                class="glyphicon glyphicon-user"
+                aria-hidden="true"></span> Users <span
+                class="badge">203</span></a>
+          </div>
+
+          <div class="well dash-box">
+            <h4>Traffickers Captured</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar"
+                aria-valuenow="60" aria-valuemin="0"
+                aria-valuemax="100" style="width: 60%;">
+                74%%
+              </div>
+            </div>
+            <h4>At Large</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" style="width: 40%;">
+                26%
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+<div class="panel panel-default">
+            <div class="panel-heading main-color-bg">
+              <h3 class="panel-title">Facts</h3>
+            </div>
+
+            <div class="table-content">
+              <table
+                class="table table-borded table-responsive table-striped"
+                id="table-list">
+                <thead class="table-dark">
+                  <tr>
+                    <td><u><b>Source</u></b></td>
+                    <td><u><b>Checked</u></b>
+                    </td>
+                    <td><u><b>Fact</u></b></td>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>PTI</td>
+                  <td><span class="glyphicon glyphicon-ok"
+                      aria-hidden="true"></span></td>
+                  <td>Every trafficked child is purchased
+                    for sex 5.4 times a day</td>
+                  </tr>
+
+                  <tr>
+                    <td>World Health Org</td>
+                  <td><span class="glyphicon glyphicon-ok"
+                      aria-hidden="true"></span></td>
+                 <td>7 years average lifespan of a child
+                    victim once taken</td>
+                  </tr>
+
+                   <tr>
+                    <td>Child Services Org</td>
+                  <td><span class="glyphicon glyphicon-ok"
+                      aria-hidden="true"></span></td>
+                  <td>Every 2.5 hours a child is taken by
+                    human traffickers</td>
+                  </tr>
+
+                  <tr>
+                    <td>HHS</td>
+                  <td><span class="glyphicon glyphicon-ok"
+                      aria-hidden="true"></span></td>
+                <td>100,000-150,000 victims are held as
+                    commercial sex slaves</td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <button class="btn btn-primary" id="add"><span
+                  class="glyphicon glyphicon-plus-sign"></span>Add
+                New
+                Fact</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="myModal" tabindex="-1"
+    role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close"
+            data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Update
+            Fact</h4>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div> 
+
+  <footer id="footer">
+    <p>Copyright Milder Designs, &copy; 2020</p>
+  </footer>
+
+ 
+  <script>
+    CKEDITOR.replace('editor1');
+  </script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
